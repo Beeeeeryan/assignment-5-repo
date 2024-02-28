@@ -1,11 +1,38 @@
-<!DOCTYPE html>
+><!DOCTYPE html>
 
 <html>
+  <head>
+ 
+  </head>
 
   <body>
-    <svg viewBox="0 0 100%">
-      <rect x="10" y="10" width="80" height="80" fill="red" />
+    <svg width="100%" height="300"> 
+
+      <defs>
+        <linearGradient id="CustomGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#696eff;stop-opacity:1"/>
+          <stop offset="100%" style="stop-color:#f8acff;stop-opacity:1"/>
+        </linearGradient>
+        <linearGradient id="CustomGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#f1515e;stop-opacity:1"/>
+          <stop offset="100%" style="stop-color:#1dbde6;stop-opacity:1"/>
+        </linearGradient>
+
+        <radialGradient id="CustomRadGradient1" fx="0.86" fy="0.15" cx="1.1" cy="50%" r="1">
+          <stop offset="0%" style="stop-color:#e97cbb;stop-opacity:1"/>
+          <stop offset="65%" style="stop-color:#6710c2 ;stop-opacity:1"/>
+          <stop offset="100%" style="stop-color:#6710c2;stop-opacity:1"/>
+          
+          
+        </radialGradient>
+      </defs>
+
+      <rect x="0" y="0" rx="10" ry="10" width="100%" height="300" fill="url(#CustomGradient1)" stroke="url(#CustomGradient2)" stroke-width="4" stroke-linejoin="round"/>
+      <circle cx="89%" cy="150" r="10%" width="10%" height ="10%" fill="url(#CustomRadGradient1)"></circle>
+      <polygon></polygon>
+      <text x="50%" y="50%"> Hello</text>
     </svg>
+    
   </body>
 
 </html>

@@ -1,0 +1,83 @@
+     <svg width="100%" height="300" xmlns="http://www.w3.org/2000/svg"> 
+        <defs>
+          <linearGradient id="CustomGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#696eff;stop-opacity:1"/>
+            <stop offset="100%" style="stop-color:#f8acff;stop-opacity:1"/>
+          </linearGradient>
+  
+          <linearGradient id="CustomGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#f1515e;stop-opacity:1"/>
+            <stop offset="100%" style="stop-color:#1dbde6;stop-opacity:1"/>
+          </linearGradient>
+  
+          <radialGradient id="CustomRadGradient1" fx="0.86" fy="0." cx="1.1" cy="15%" r="1">
+            <stop offset="0%" style="stop-color:#e97cbb;stop-opacity:1"/>
+            <stop offset="65%" style="stop-color:#6710c2 ;stop-opacity:0.85"/>
+            <stop offset="100%" style="stop-color:#6710c2;stop-opacity:0.75"/>
+          </radialGradient>
+  
+          <radialGradient id="CustomRadGradient2" fx="0.86" fy="0." cx="1.1" cy="15%" r="1">
+            <stop offset="0%" style="stop-color:#ef745c;stop-opacity:1"/>
+            <stop offset="65%" style="stop-color:#c11e38 ;stop-opacity:0.85"/>
+            <stop offset="100%" style="stop-color:#34073d;stop-opacity:0.75"/>
+          </radialGradient>
+  
+          <radialGradient id="CustomRadGradient3" fx="0.86" fy="0." cx="1.1" cy="15%" r="1">
+            <stop offset="0%" style="stop-color:#0968e5;stop-opacity:1"/>
+            <stop offset="65%" style="stop-color:#28b8d5 ;stop-opacity:0.85"/>
+            <stop offset="100%" style="stop-color:#091970;stop-opacity:0.75"/>
+          </radialGradient>
+          <filter id="text-shadow" x="-20%" y="-20%" width="140%" height="140%">
+              <feDropShadow dx="2" dy="2" stdDeviation="0.5" flood-color="#283747" flood-opacity="0.5"> 
+              </feDropShadow>
+          </filter>
+          <filter id="blur">
+            <feGaussianBlur stdDeviation="2" />
+          </filter>
+        </defs>
+  
+        <!-- Rectangle Banner -->
+        <rect x="0" y="0" rx="10" ry="10" width="100%" height="100%" fill="url(#CustomGradient1)" stroke="url(#CustomGradient2)" stroke-width="4" stroke-linejoin="round"/>
+        
+          <!--Left Side Image -->
+          <img src="\assignment-5-repo\resources\gojo.svg" y="-75" width="70%" height="190%"/>
+      
+  <!-- CosineWave -->
+  <path fill="none" width="10%" height ="10%" stroke="lightgrey" d="M20,100 C70,50 130,150 180,100 C230,50 290,150 340,100 C400,100, 500,150 530,200" transform="translate(1000,-4)"/>
+  <!-- ReflectedCosineWave -->
+  <path id="reflectedpath" fill="none" stroke="lightgrey" d="M20,100 C70,50 130,150 180,100 C230,50 290,150 340,100 C400,100, 500,150 530,200" transform="translate(1000,80) translate(0,200) scale(1,-1)" />
+  
+        <!-- Red Sphere -->
+        <circle  r="5%" width="10%" height ="10%" fill="url(#CustomRadGradient2)" transform="translate(1000,-4)">
+          <animateMotion dur="10s" repeatCount="indefinite" path="M20,100 C70,50 130,150 180,100 C230,50 290,150 340,100 C400,100, 500,150 530,200"/>
+        </circle>
+        <!-- Blue Sphere -->
+        <circle  r="5%" width="10%" height ="10%" fill="url(#CustomRadGradient3)" transform="translate(1000,1)">
+            <animateMotion dur="11s" repeatCount="indefinite" path="M20,200 C70,150 130,150 180,200 C430,100 580,300 680,0" transform="translate(320,80) translate(0,200) scale(1,-1)"/>
+        </circle>
+        <!-- Purple Sphere -->
+        <circle cx="89%" cy="150" r="10%" width="10%" height ="10%" fill="url(#CustomRadGradient1)" ></circle>
+        <!-- Polygon -->
+        <polygon points="100,10 40,198 190,78 10,78 160,198" fill="url(#CustomRadGradient2)" transform="translate(700,15) scale(0.5)" />
+        <polygon points="100,10 40,198 190,78 10,78 160,198" fill="url(#CustomRadGradient2)" transform="translate(900,150) scale(0.5)" />
+
+        <!--Left Side Image -->
+       
+        <!-- Banner Text -->
+        <text x="40%" y="50%" font-family="Impact" font-size="50" fill="#581845" filter="url(#text-shadow)">
+           <tspan x="39%" y="120" font-weight="bold"> 
+            虚式 
+           <tspan x="40%" y="50%" font-size="20" font-weight="200">
+            (Kyoshiki)
+           </tspan>
+           </tspan>
+           <tspan x="42%" y="200" font-weight="bold">
+            「茈」
+            <tspan x="46.05%" y="230" font-size="20" font-weight="200" >
+            (Murasaki)
+            </tspan>
+           </tspan>
+  
+  
+        </text>
+      </svg>

@@ -2,93 +2,68 @@
 
 <html>
   <head>
- 
+    
+   
   </head>
 
   <body>
-   
-    <svg width="100%" height="300"> 
-      
+    <defs>
+      <radialGradient id="CustomeGradient3" fx="0.86" fy="0." cx="1.1" cy="15%" r="1">
+        <stop offset="0%" style="stop-color:#e9d022;stop-opacity:1"/>
+        <stop offset="65%" style="stop-color:#ffcf67 ;stop-opacity:0.85"/>
+        <stop offset="100%" style="stop-color:#e60b09;stop-opacity:0.75"/>
+      </radialGradient>
 
-      <defs>
-        <linearGradient id="CustomGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" style="stop-color:#696eff;stop-opacity:1"/>
-          <stop offset="100%" style="stop-color:#f8acff;stop-opacity:1"/>
-        </linearGradient>
-
-        <linearGradient id="CustomGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" style="stop-color:#f1515e;stop-opacity:1"/>
-          <stop offset="100%" style="stop-color:#1dbde6;stop-opacity:1"/>
-        </linearGradient>
-
-        <radialGradient id="CustomRadGradient1" fx="0.86" fy="0." cx="1.1" cy="15%" r="1">
-          <stop offset="0%" style="stop-color:#e97cbb;stop-opacity:1"/>
-          <stop offset="65%" style="stop-color:#6710c2 ;stop-opacity:0.85"/>
-          <stop offset="100%" style="stop-color:#6710c2;stop-opacity:0.75"/>
-        </radialGradient>
-
-        <radialGradient id="CustomRadGradient2" fx="0.86" fy="0." cx="1.1" cy="15%" r="1">
-          <stop offset="0%" style="stop-color:#ef745c;stop-opacity:1"/>
-          <stop offset="65%" style="stop-color:#c11e38 ;stop-opacity:0.85"/>
-          <stop offset="100%" style="stop-color:#34073d;stop-opacity:0.75"/>
-        </radialGradient>
-
-        <radialGradient id="CustomRadGradient3" fx="0.86" fy="0." cx="1.1" cy="15%" r="1">
-          <stop offset="0%" style="stop-color:#0968e5;stop-opacity:1"/>
-          <stop offset="65%" style="stop-color:#28b8d5 ;stop-opacity:0.85"/>
-          <stop offset="100%" style="stop-color:#091970;stop-opacity:0.75"/>
-        </radialGradient>
-
-        <filter id="text-shadow" x="-20%" y="-20%" width="140%" height="140%">
-            <feDropShadow dx="2" dy="2" stdDeviation="0.5" flood-color="#283747" flood-opacity="0.5"> 
-            </feDropShadow>
-        </filter>
-        <filter id="blur">
-          <feGaussianBlur stdDeviation="2" />
-        </filter>
-        <!-- CosineWave -->
-        <path fill="none" stroke="lightgrey" d="M20,100 C70,50 130,150 180,100 C230,50 290,150 340,100" />
-      </defs>
-
-      <rect x="0" y="0" rx="10" ry="10" width="100%" height="300" fill="url(#CustomGradient1)" stroke="url(#CustomGradient2)" stroke-width="4" stroke-linejoin="round"/>
+    </defs>
 
 
-<!-- CosineWave -->
-<path fill="none" stroke="lightgrey" d="M20,100 C70,50 130,150 180,100 C230,50 290,150 340,100 C400,100, 500,150 530,200" transform="translate(320,-4)"/>
-<!-- ReflectedCosineWave -->
-<path id="reflectedpath" fill="none" stroke="lightgrey" d="M20,100 C70,50 130,150 180,100 C230,50 290,150 340,100 C400,100, 500,150 530,200" transform="translate(320,80) translate(0,200) scale(1,-1)" />
-
-      <!-- Red Sphere -->
-      <circle  r="5%" width="10%" height ="10%" fill="url(#CustomRadGradient2)" transform="translate(320,-4)">
-        <animateMotion dur="10s" repeatCount="indefinite" path="M20,100 C70,50 130,150 180,100 C230,50 290,150 340,100 C400,100, 500,150 530,200"/>
-      </circle>
-      <!-- Blue Sphere -->
-      <circle  r="5%" width="10%" height ="10%" fill="url(#CustomRadGradient3)" transform="translate(320,1)">
-          <animateMotion dur="11s" repeatCount="indefinite" path="M20,200 C70,150 130,150 180,200 C430,100 580,300 680,0" transform="translate(320,80) translate(0,200) scale(1,-1)">
-          
-      </circle>
-
-
-      <circle cx="89%" cy="150" r="10%" width="10%" height ="10%" fill="url(#CustomRadGradient1)" ></circle>
-      
-      <polygon></polygon>
-
-      <text x="40%" y="50%" font-family="Impact" font-size="50" fill="#581845" filter="url(#text-shadow)">
-         <tspan x="39%" y="120" font-weight="bold"> 
-          虚式 
-         <tspan x="40%" y="50%"font-size="20" font-weight="200">
-          (Kyoshiki)
-         </tspan>
-         </tspan>
-         <tspan x="42%" y="200" font-weight="bold">
-          「茈」
-          <tspan x="46.05%" y="230"font-size="20" font-weight="200" >
-          (Murasaki)
-          </tspan>
-         </tspan>
-
-
-      </text>
+    <!-- Banner1 -->
+    <svg width="100%" height="300">
+    <image href="/assignment-5-repo\resources\Banner1.svg" width="100%" height="300"/>
+    <image href="\assignment-5-repo\resources\gojo.svg" y="-75" width="70%" height="190%"/>
     </svg>
+    
+    <!--Container for Nav and Caption -->
+    <div>
+      <svg width="100%" height="300" style="position: absolute; z-index: -1;">
+        <rect width="300" height="200" rx="10" ry="10" style="fill: grey" transform="translate(543) scale(0.75)" />
+          <text x="780" y="110" font-family="cursive" font-weight="bold" font-size="80" text-decoration="underline" filter="url(#text-shadow)" transform="scale(0.75)">Links</text>
+          <text x="835" y="180" font-family="cursive" font-weight="bold" font-size="50" transform="scale(0.75)">😄-></text>
+      </svg>
+       <!-- Nav Bar with Hyperlinks -->
+      <div style="width: 50%; max-width: 200px; margin: 0 auto; background-color: #b8a4c9; padding: 20px; box-sizing: border-box; border-radius: 20px; position: relative; top: 25px;"aria-label="Navigation Menu">
+        <nav class="menue" >
+          <ul style="font-family: Arial; font-size: 12; font-weight: bold;">
+            <li>
+              <a href="/assignment-5-repo\index.html">index.html</a>
+            </li>
+            <li>
+              <a href="/assignment-5-repo\views\two.html">two.html</a>
+            </li>
+            <li>
+              <a href="/assignment-5-repo\views\three.html">three.html</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Headers and Text -->
+    <div style="text-align: center;">
+      <svg width="500">
+        <ellipse cx="200" cy="100" rx="150" ry="50" fill="lightblue" />
+      </svg>
+    <h1  style="position: relative; top: -100px; right: 50px; font-family:cursive;"> CSC Assignment-5</h1>
+
+    <h2 style="position: relative; top: -100px; right: 550px; font-family:cursive;">How to Apply CSS to HTML</h2>
+    <p style="position: relative; top: -100px; left: -550px; font-family:cursive;">Hello this is a CSS test</p>
+
+    <h2 style="position: relative; top: -200px; left: 550px; font-family:cursive;">How to Use JavaScript in a Webpage</h2>
+    <p style="position: relative; top: -200px; right: -550px; font-family:cursive;">Hello this is a Java test</p>
+    </div>
+    
+    
+  
+
   </body>
 </html>

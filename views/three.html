@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSC317Assignment5</title>
+    <link rel="icon" href="/assignment-5-repo/resources/favicon.svg" type="image/svg+xtml">
+</head>
+
+<body>
+
+
+
+
+<svg width="100%" height="300px">
+
+    <defs>
+
+        <linearGradient id="GrayGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#b5c6e0;stop-opacity:1"/>
+                <stop offset="0%" style="stop-color:#6d90b9;stop-opacity:1"/>
+                <stop offset="100%" style="stop-color:#b5c6e0;stop-opacity:1"/>
+        </linearGradient>
+    
+        <linearGradient id="BlackGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#0a1647;stop-opacity:1"/>
+                <stop offset="50%" style="stop-color:#8399a2;stop-opacity:1"/>
+                <stop offset="100%" style="stop-color:#211f2f;stop-opacity:1"/>
+        </linearGradient>
+    
+        <filter id="text-shadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="2" dy="2" stdDeviation="0.5" flood-color="#283747" flood-opacity="0.5"> 
+            </feDropShadow>
+        </filter>
+    
+        <filter id="shapeShadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+            <feOffset dx="2" dy="2" result="offsetblur"/>
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.2"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    
+        <filter id="blur">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+        </filter>
+    
+        <filter id="GradientFilter">
+            <feComposite in="SourceGraphic" in2="SourceGraphic" operator="in"/>
+            <feBlend mode="multiply" in2="BlackGradient"/>
+        </filter>
+    
+    </defs>
+    <!-- Custom Rectangular Banner Shape -->
+<rect x="0" y="0" rx="10" ry="10" width="100%" height="100%" fill="url(#GrayGradient)" stroke="url(#CustomGradient1)" stroke-width="4" stroke-linejoin="round"/>
+
+<g style="transform: scale(2.5) translate(-595px, -99px)">
+    <image x="0" y="0" href="/assignment-5-repo/resources/Dismantle.svg" alt="Dismantle" width="100%" height="100%" filter="url(#blur) url(#GradientFilter)" />
+</g>
+    
+    <image  style="transform: scale(2.1) translate(-525px, -135px) rotate(5deg) " href="/assignment-5-repo/resources/SlashEffect.svg" alt="Slash Effect" width="100%" height="100%"  fill="black" filter="url(#blur) url(#GradientFilter)"/>
+
+<text font-family="cursive"  font-size="40" fill="black" filter="url(#text-shadow)">
+    <tspan x="85%" y="85px" font-weight="light">
+        解
+    </tspan>
+    <tspan x="88%" y="135px" font-weight="light">
+        体
+    </tspan>
+    <tspan x="90%" y="165px" font-size="25">
+    (Dismantle)
+    </tspan>
+</text>
+<!-- Text Bubble Container -->
+<g style="transform: scale(1.5) translate(115px,15px) rotate(-3deg);">
+    <image href="/assignment-5-repo\resources\SpecialShape.svg" alt="Text Bubble" width="20%" height="100%" filter="url(#shapeShadow)"/>
+    <text x="53" y="50" dominant-baseline="middle" text-anchor="middle" font-family="cursive" font-size="16" fill="black" filter="url(#text-shadow)">
+       <tspan x="55" y="30">
+        双
+       </tspan>
+       <tspan x="55" y="50">
+       流
+       </tspan>
+       <tspan x="55" y="70">
+       流
+       </tspan>
+       <tspan x="55" y="90">
+       星
+       </tspan>
+       <tspan x="55" y="110" font-size="8">(Pair of Meteors)</tspan>
+    
+    
+    </text>
+    
+</g>
+
+<!-- Text Bubble Container -->
+<g style="transform: scale(1.4) translate(500px,70px) rotate(4deg);">
+    <image href="/assignment-5-repo/resources/SpecialShape.svg" alt="Text Bubble" width="20%" height="100%" filter="url(#shapeShadow)"/>
+    <text x="53" y="50" dominant-baseline="middle" text-anchor="middle" font-family="cursive" font-size="19" fill="black" filter="url(#text-shadow)">
+       <tspan x="55" y="40">
+        反
+       </tspan>
+       <tspan x="55" y="70">
+       発
+       </tspan>
+    
+       <tspan x="55" y="110" font-size="10">(Repulsion)</tspan>
+    
+    
+    </text>
+</g>
+
+<!-- Text Bubble Container -->
+<g style="transform: scale(1.5) translate(800px,20px) rotate(-7deg);">
+    <image href="/assignment-5-repo/resources/SpecialShape.svg" alt="Text Bubble" width="20%" height="100%" filter="url(#shapeShadow)"/>
+    <text x="53" y="50" dominant-baseline="middle" text-anchor="middle" font-family="cursive" font-size="19" fill="black" filter="url(#text-shadow)">
+       <tspan x="55" y="40">
+        龍
+       </tspan>
+       <tspan x="55" y="70">
+       鱗
+       </tspan>
+    
+       <tspan x="55" y="110" font-size="9">(Dragon Scales)</tspan>
+    
+    
+    </text>
+</g>
+
+
+</svg>
+
+    <!--Container for Nav and Caption -->
+    <div>
+        <svg width="100%" height="300" style="position: absolute; z-index: -1;">
+          <rect width="300" height="200" rx="10" ry="10" style="fill: grey" transform="translate(543) scale(0.75)" />
+            <text x="780" y="110" font-family="cursive" font-weight="bold" font-size="80" text-decoration="underline" filter="url(#text-shadow)" transform="scale(0.75)">Links</text>
+            <text x="835" y="180" font-family="cursive" font-weight="bold" font-size="50" transform="scale(0.75)">😄-></text>
+        </svg>
+         <!-- Nav Bar with Hyperlinks -->
+        <div style="width: 50%; max-width: 200px; margin: 0 auto; background-color: #b8a4c9; padding: 20px; box-sizing: border-box; border-radius: 20px; position: relative; top: 25px;"aria-label="Navigation Menu">
+          <nav class="menue" >
+            <ul style="font-family: Arial; font-size: 12; font-weight: bold;">
+              <li>
+                <a href="/assignment-5-repo\index.html">Index Page</a>
+              </li>
+              <li>
+                <a href="/assignment-5-repo\views\two.html">Second Page</a>
+              </li>
+              <li>
+                <a href="/assignment-5-repo\views\three.html">Third Page</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+
+
+      <!-- SVG Animation-->
+      <div style="text-align: center; height: 100px; line-height: 100px;">
+
+        <h1 style="font-family: cursive; font-weight: bold; font-size: 25;">Heres the animation!</h1>
+        <svg width="400" height="400">
+            <image href="/assignment-5-repo/resources/page-three.svg" alt="Animation of a red circle going around in a square"/>
+        </svg>
+              
+      </div>
+
+
+      
+
+</body>
+
+
+
+
+</html>

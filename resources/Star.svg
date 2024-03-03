@@ -1,0 +1,11 @@
+<svg width="100%" height="300" xmlns="http://www.w3.org/2000/svg">
+
+      <linearGradient id="CustomeGradient4" fx="0.86" fy="0." cx="1.1" cy="15%" r="1">
+        <stop offset="0%" style="stop-color:#f44369;stop-opacity:1"/>
+        <stop offset="65%" style="stop-color:#524175 ;stop-opacity:0.85"/>
+        <stop offset="100%" style="stop-color:#3e3b92;stop-opacity:0.75"/>
+      </linearGradient>
+
+    <polygon points="100,10 40,198 190,78 10,78 160,198" fill="url(#CustomeGradient4)" transform="translate(900,150) scale(0.5)" />
+
+</svg>

@@ -4,7 +4,7 @@
             <stop offset="0%" style="stop-color:#696eff;stop-opacity:1"/>
             <stop offset="100%" style="stop-color:#f8acff;stop-opacity:1"/>
           </linearGradient>
-  
+          
           <linearGradient id="CustomGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" style="stop-color:#f1515e;stop-opacity:1"/>
             <stop offset="100%" style="stop-color:#1dbde6;stop-opacity:1"/>

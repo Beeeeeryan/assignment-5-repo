@@ -2,8 +2,8 @@
 
 <html>
   <head>
-    
-   
+    <title>CSC317Assignment5</title>
+   <link rel="icon" href="/assignment-5-repo/resources/favicon.svg" type="image/svg+xtml">
   </head>
 
   <body>
@@ -13,6 +13,11 @@
         <stop offset="65%" style="stop-color:#ffcf67 ;stop-opacity:0.85"/>
         <stop offset="100%" style="stop-color:#e60b09;stop-opacity:0.75"/>
       </radialGradient>
+      <linearGradient id="CustomeGradient4" fx="0.86" fy="0." cx="1.1" cy="15%" r="1">
+        <stop offset="0%" style="stop-color:#f44369;stop-opacity:1"/>
+        <stop offset="65%" style="stop-color:#524175 ;stop-opacity:0.85"/>
+        <stop offset="100%" style="stop-color:#3e3b92;stop-opacity:0.75"/>
+      </linearGradient>
 
     </defs>
 
@@ -35,13 +40,13 @@
         <nav class="menue" >
           <ul style="font-family: Arial; font-size: 12; font-weight: bold;">
             <li>
-              <a href="/assignment-5-repo\index.html">index.html</a>
+              <a href="/assignment-5-repo\index.html">Index Page</a>
             </li>
             <li>
-              <a href="/assignment-5-repo\views\two.html">two.html</a>
+              <a href="/assignment-5-repo\views\two.html">Second Page</a>
             </li>
             <li>
-              <a href="/assignment-5-repo\views\three.html">three.html</a>
+              <a href="/assignment-5-repo\views\three.html">Third Page</a>
             </li>
           </ul>
         </nav>
@@ -55,15 +60,139 @@
       </svg>
     <h1  style="position: relative; top: -100px; right: 50px; font-family:cursive;"> CSC Assignment-5</h1>
 
-    <h2 style="position: relative; top: -100px; right: 550px; font-family:cursive;">How to Apply CSS to HTML</h2>
-    <p style="position: relative; top: -100px; left: -550px; font-family:cursive;">Hello this is a CSS test</p>
+    <h2 class="css-question" style="position: relative; top: -100px; right: 550px; font-family:cursive; text-decoration: underline;">How to Apply CSS to HTML</h2>
+      
+       <h3 class="css-question" style="position: relative; top: -100px; right: 550px; font-family:cursive;"> 1. Create a CSS File in the same folder as HTML named "mystyle.css"</h3>
+          <p class="css-question" style="position: relative; top: -100px; right: 550px; font-family:cursive;"> Here's an example of what could look like in external CSS stylesheet: </p>
 
-    <h2 style="position: relative; top: -200px; left: 550px; font-family:cursive;">How to Use JavaScript in a Webpage</h2>
-    <p style="position: relative; top: -200px; right: -550px; font-family:cursive;">Hello this is a Java test</p>
+          <!-- CSS Style Code Snippet Example -->
+          <div style="display: inline-block; position: relative; top: -100px; left: 205px; text-align: left; transform: translate(-750px);">
+            <pre style="font-size: 15px; background-color: #f4f4f4; padding-left: 0px; border-radius: 5px; display: inline-block;">
+              <code>
+                  <span style="color: #ff930f">h3</span> {
+                  <span style="color: #6e78ff">color</span>: orange;
+                  <span style="color: #6e78ff">background-color</span>: grey;
+                  <span style="color: #6e78ff">font-family</span>: <span style="color: #ea5459">"cursive"</span>;
+                  }
+             </code>
+            </pre>
+          </div>
+          <p class="css-question" style="position: relative; top: -100px; right: 550px; font-family:cursive;">Now inside our HTML document we use the <code><span style="color:#3d8bff">href</span>
+
+          </code> attribute along with <code><span style="color:#3d8bff">link</span></code> <span style="font-weight: bolder;"><br> to reference the file in your file system:</span></p>
+
+          <!-- CSS Style Code Snippet Example -->
+          <div style="display: inline-block; position: relative; top: -100px; left: 205px; text-align: left; transform: translate(-750px);">
+            <pre style="font-size: 15px; background-color: #f4f4f4; padding-left: 0px; border-radius: 5px; display: inline-block;">
+              <code>
+                    &lt;<span style="color:#3d8bff;">link</span> <span style="color: #e60b09;">rel</span>="mystylesheet" <span style="color: #3d8bff;">href</span>="mystyle.css"&gt;
+             </code>
+            </pre>
+          </div>
+
+          <p class="css-question" style="position: relative; top: -100px; right: 550px; font-family:cursive;"><code><span style="color: #e60b09;">rel</span></code> 
+                              <span style="font-weight: bolder;">defines the relationship between the</span><code><span style="color: #3d8bff;">&lt;link&gt;</span></code>
+                              element <br>and the current document it referencing such as <span style="color: #e60b09;">"mystyle.css"</span><br>
+                              <span style="font-weight: bolder;text-decoration: underline;">We can also use adjusted paths  to reference the CSS file:</span>
+          </p>
+          
+           <!-- CSS Style Code Snippet Example -->
+          <div style="display: inline-block; position: relative; top: -100px; left: 205px; text-align: left; transform: translate(-750px);">
+            <pre style="font-size: 15px; background-color: #f4f4f4; padding-left: 0px; border-radius: 5px; display: inline-block;">
+              <code>
+                    &lt;<span style="color:#3d8bff;">link</span> <span style="color: #e60b09;">rel</span>="mystylesheet" <span style="color: #3d8bff;">href</span>="resources/mstyle.css"&gt;
+                    &lt;<span style="color:#3d8bff;">link</span> <span style="color: #e60b09;">rel</span>="mystylesheet" <span style="color: #3d8bff;">href</span>="other/resources/mystyle.css"&gt;
+             </code>
+            </pre>
+          </div>
+
+          <p class="css-question" style="position: relative; top: -100px; right: 550px; font-family:cursive;">
+              Referencing an external CSS Stylesheet in HTML would then look like this with the <code><span style="color: #3d8bff;">&lt;link&gt;</span></code> element <br>
+              located in the <code>&lt;head&gt;</code> section our our HTML document:
+          </p>
+          <!-- HTML Code Snippet Portion -->
+          <div style="display: inline-block; position: relative; top: -100px; left: 205px; text-align: left; transform: translate(-750px);">
+            <pre style="font-size: 15px; background-color: #f4f4f4; padding-left: 0px; border-radius: 5px; display: inline-block;">
+              <code>
+                        &lt;<span style="color: #3d8bff;">html</span>&gt;
+                           &lt;<span style="color:#3d8bff;">link</span> <span style="color: #e60b09;">rel</span>="mystylesheet" <span style="color: #3d8bff;">href</span>="mystyle.css"&gt;
+
+                          &lt;<span style="color: #3d8bff;">body</span>&gt;
+                              &lt;<span span style="color: #3d8bff;">h1</span>&gt;Applying CSS Externally in HTML &lt;<span span style="color: #3d8bff;">/h1</span>&gt;
+                          &lt;<span style="color: #3d8bff;">/body;</span>&gt;
+                        &lt; <span style="color: #3d8bff;">/html</span>&gt;
+              </code>
+            </pre>
+          </div>
+
+          <p class="css-question" style="position: relative; top: -100px; right: 550px; font-family:cursive;">This what would result in a seperate webpage:</p>
+          
+          <div style="transform:scale(0.5); word-wrap: break-word; width: 30%; position: relative; top: -100px; left: 100px;">
+            <h1 style="background-color: grey; font-family: cursive; color: orange;">Applying CSS Externally in HTML</h1>
+          </div>
+                
+        
+      
+          <!-- Star Shape -->
+         <div style="position: relative; top: -1355px; left: 350px; transform: translate(-500px) ;">
+              <object type="image/svg+xml" data="\assignment-5-repo/resources/Star.svg" width="100%" height="100%">
+              </object>
+         </div>
+     
+         <div style="position: relative; top: -855px; left: 650px; transform: translate(-500px) ;">
+          <object type="image/svg+xml" data="\assignment-5-repo/resources/Star.svg" width="100%" height="100%">
+          </object>
+        </div>
+
+        <div style="position: relative; top: -2055px; left: 150px; transform: translate(-500px) ;scale: 0.2;">
+          <object type="image/svg+xml" data="\assignment-5-repo/resources/Wheel.svg" width="100%" height="100%">
+          </object>
+        </div>
+        
+
+        <!-- Java Example -->
+    <h2 class="js-question" style="position: relative; top: -3285px; left: 550px; font-family:cursive; text-decoration: underline;">How to Use JavaScript in a Webpage</h2>
+    <h3 class="js-question" style="position: relative; top: -3285px; left: 550px; font-family:cursive;"> 1. Create a Java File in the same folder as HTML named "myjscript.css"</h3>
+
+    <p class ="js-question" style="position: relative; top: -3285px; right: -550px; font-family:cursive;">Using JavaScript doesn't appear in a web page as a result you need the 
+          &lt;<code style="color: #3d8bff;">script</code>&gt; element<br> which has a <code style="color: #e60b09;">src</code> attribute
+    </p>
+
+    <!-- Java Code Example -->
+    <div style="display: inline-block; position: relative; top: -3285px; left: 550px; text-align: left;">
+      <pre style="font-size: 15px; background-color: #f4f4f4; padding-left: 0px; border-radius: 5px; display: inline-block;">
+        <code>
+              &lt;<span style="color: #3d8bff;">script</span><span style="color: #e60b09;"> src</span>="other/resources/myjscript.js"&gt;&lt;<span style="color: #3d8bff;">/script</span>&gt;
+       </code>
+      </pre>
     </div>
-    
-    
+
+    <p style="position: relative; top: -3285px; left: 550px; font-family:cursive;">The <code style="color: #e60b09;">src</code> element like <code style="color: #3d8bff;">href</code><br>
+      <span style="font-weight: bolder; text-decoration: underline;">refers to the script file in your file system<br> either in same folder or using a relative path</span>
+    </p>
+
+          <!-- Java Code Example -->
+    <div style="display: inline-block; position: relative; top:-3285px; left: 550px; text-align: left;">
+      <pre style="font-size: 15px; background-color: #f4f4f4; padding-left: 0px; border-radius: 5px; display: inline-block;">
+        <code>
+            &lt;<span style="color: #3d8bff;">script</span>&gt;
+              window.addEventListener(<span style="color: #e60b09;">"load"</span>), () =>{
+                console.<span style="color: #e60b09;">log</span>(<span style="color: #e60b09;">"This function is executed once the page is loaded"</span>);
+              };
+            &lt;<span style="color: #3d8bff;">/script</span>&gt;
+       </code>
+      </pre>
+    </div>
+
+    <p style="position: relative; top: -3285px; left: 550px; font-family:cursive;"> In addition you can also use Javascript code between the &lt;<code><span style="color: #3d8bff;">script</span></code>&gt; tag.<br>
+      Linking external javascript allows you to be focused on your work, <br>write self-sufficient HTML, and structured JavaScript applications
+ 
+    </p>
+
   
 
+
+
+    </div>
   </body>
 </html>

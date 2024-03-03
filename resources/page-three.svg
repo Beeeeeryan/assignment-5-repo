@@ -1,0 +1,14 @@
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+
+<!-- Creating a Square Path -->
+<path d="M 100, 100 L300, 100 L 300,300 L 100,300 Z" fill="none" stroke="grey"/>
+
+<!-- Red Circle -->
+
+<circle r="5" fill="red">
+    <animateMotion dur="5s" repeatCount="indefinite" path="M 100, 100 L300, 100 L 300,300 L 100,300 Z">
+    </animateMotion>
+</circle>
+
+
+</svg>

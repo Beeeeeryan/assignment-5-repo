@@ -1,0 +1,121 @@
+<svg width="100%" height="300" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+    <linearGradient id="GrayGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#b5c6e0;stop-opacity:1"/>
+            <stop offset="0%" style="stop-color:#6d90b9;stop-opacity:1"/>
+            <stop offset="100%" style="stop-color:#b5c6e0;stop-opacity:1"/>
+    </linearGradient>
+
+    <linearGradient id="BlackGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#0a1647;stop-opacity:1"/>
+            <stop offset="50%" style="stop-color:#8399a2;stop-opacity:1"/>
+            <stop offset="100%" style="stop-color:#211f2f;stop-opacity:1"/>
+    </linearGradient>
+
+    <filter id="text-shadow" x="-20%" y="-20%" width="140%" height="140%">
+        <feDropShadow dx="2" dy="2" stdDeviation="0.5" flood-color="#283747" flood-opacity="0.5"> 
+        </feDropShadow>
+    </filter>
+
+    <filter id="shapeShadow" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+        <feOffset dx="2" dy="2" result="offsetblur"/>
+        <feComponentTransfer>
+            <feFuncA type="linear" slope="0.2"/>
+        </feComponentTransfer>
+        <feMerge>
+            <feMergeNode/>
+            <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+    </filter>
+
+    <filter id="blur">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+    </filter>
+
+    <filter id="GradientFilter">
+        <feComposite in="SourceGraphic" in2="SourceGraphic" operator="in"/>
+        <feBlend mode="multiply" in2="BlackGradient"/>
+    </filter>
+
+</defs>
+<!-- Custom Rectangular Banner Shape -->
+<rect x="0" y="0" rx="10" ry="10" width="100%" height="100%" fill="url(#GrayGradient)" stroke="url(#CustomGradient1)" stroke-width="4" stroke-linejoin="round"/>
+
+<g style="transform: scale(2.5) translate(-595px, -99px)">
+    <image x="0" y="0" href="Dismantle.svg" alt="Dismantle" width="100%" height="100%" filter="url(#blur) url(#GradientFilter)" />
+</g>
+
+<image  style="transform: scale(2.1) translate(-525px, -135px) rotate(5deg) " href="SlashEffect.svg" alt="Slash Effect" width="100%" height="100%"  fill="black" filter="url(#blur) url(#GradientFilter)"/>
+
+<text font-family="cursive"  font-size="40" fill="black" filter="url(#text-shadow)">
+    <tspan x="85%" y="85px" font-weight="light">
+        解
+    </tspan>
+    <tspan x="88%" y="135px" font-weight="light">
+        体
+    </tspan>
+    <tspan x="90%" y="165px" font-size="25">
+    (Dismantle)
+    </tspan>
+</text>
+<!-- Text Bubble Container -->
+<g style="transform: scale(1.5) translate(115px,15px) rotate(-3deg);">
+    <image href="SpecialShape.svg" alt="Text Bubble" width="20%" height="100%" filter="url(#shapeShadow)"/>
+    <text x="53" y="50" dominant-baseline="middle" text-anchor="middle" font-family="cursive" font-size="16" fill="black" filter="url(#text-shadow)">
+       <tspan x="55" y="30">
+        双
+       </tspan>
+       <tspan x="55" y="50">
+       流
+       </tspan>
+       <tspan x="55" y="70">
+       流
+       </tspan>
+       <tspan x="55" y="90">
+       星
+       </tspan>
+       <tspan x="55" y="110" font-size="8">(Pair of Meteors)</tspan>
+    
+    
+    </text>
+    
+</g>
+
+<!-- Text Bubble Container -->
+<g style="transform: scale(1.4) translate(500px,70px) rotate(4deg);">
+    <image href="SpecialShape.svg" alt="Text Bubble" width="20%" height="100%" filter="url(#shapeShadow)"/>
+    <text x="53" y="50" dominant-baseline="middle" text-anchor="middle" font-family="cursive" font-size="19" fill="black" filter="url(#text-shadow)">
+       <tspan x="55" y="40">
+        反
+       </tspan>
+       <tspan x="55" y="70">
+       発
+       </tspan>
+    
+       <tspan x="55" y="110" font-size="10">(Repulsion)</tspan>
+    
+    
+    </text>
+</g>
+
+<!-- Text Bubble Container -->
+<g style="transform: scale(1.5) translate(800px,20px) rotate(-7deg);">
+    <image href="SpecialShape.svg" alt="Text Bubble" width="20%" height="100%" filter="url(#shapeShadow)"/>
+    <text x="53" y="50" dominant-baseline="middle" text-anchor="middle" font-family="cursive" font-size="19" fill="black" filter="url(#text-shadow)">
+       <tspan x="55" y="40">
+        龍
+       </tspan>
+       <tspan x="55" y="70">
+       鱗
+       </tspan>
+    
+       <tspan x="55" y="110" font-size="9">(Dragon Scales)</tspan>
+    
+    
+    </text>
+</g>
+
+</svg>

@@ -1,6 +1,7 @@
 #CSC 317 Assignment Features 
 - ALL FEATURES DONE
-
+-Known Issues:
+Some scaling issues with windoes
 #Reference Articles and Resources!
 - MDN Article on Basic SVG Elements: https://developer.mozilla.org/en-US/docs/Web/SVG/Element
 - MDN Article on Basic HTML Elements: https://developer.mozilla.org/en-US/docs/Web/HTML/Element

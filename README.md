@@ -1,5 +1,5 @@
 #CSC 317 Assignment Features 
-- In Progress:
+- ALL FEAATURES DONE
 
 #Reference Articles and Resources!
 - MDN Article on Basic SVG Elements: https://developer.mozilla.org/en-US/docs/Web/SVG/Element
